@@ -29,7 +29,6 @@ namespace FootballManagament
             set { nameClub = value; }
         }
       
-
         public string NameCoach
         {
             get { return nameCoach; }
@@ -76,16 +75,18 @@ namespace FootballManagament
         {
             this.NameClub = NameClub;
         }
+
         public FootballClub()
         {
-
         }
+
         public FootballClub(string IdClub, string NameClub, string NameCoach)
         {
             this.IdClub = IdClub;
             this.NameClub = NameClub;
             this.NameCoach = NameCoach;
         }
+
         public FootballClub(string IdClub, string NameClub, string NameCoach, int MatchNumber, int WinMatchNumber, int LoseMatchNumber, int TieMatchNumber)
         {
             this.IdClub = IdClub;
@@ -96,6 +97,7 @@ namespace FootballManagament
             this.LoseMatchNumber = LoseMatchNumber;
             this.TieMatchNumber = TieMatchNumber;
         }
+
         public int pointFootBall()
         {
             return 3 * WinMatchNumber + 1 * TieMatchNumber;

@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace FootballManagament {
     class FootballClubController {
-        int d = 0;
         private List<FootballClub> clubList;
         internal List<FootballClub> ClubList
         {
