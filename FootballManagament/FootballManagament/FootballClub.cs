@@ -9,60 +9,62 @@ namespace FootballManagament
     public class FootballClub : IEquatable<FootballClub>, IComparable<FootballClub>
     {
         private string idClub;
+        private string nameClub;
+        private string nameCoach;
+        private int matchNumber;
+        private int winMatchNumber;
+        private int loseMatchNumber;
+        private int tieMatchNumber;
+        private int pointClub;
+        private int goalClub;
+
         public string IdClub {
             get { return idClub; }
             set { idClub = value; }
         }
-        private string nameClub;
 
         public string NameClub
         {
             get { return nameClub; }
             set { nameClub = value; }
         }
-        private string nameCoach;
+      
 
         public string NameCoach
         {
             get { return nameCoach; }
             set { nameCoach = value; }
         }
-        private int matchNumber;
 
         public int MatchNumber
         {
             get { return matchNumber; }
             set { matchNumber = value; }
         }
-        private int winMatchNumber;
 
         public int WinMatchNumber
         {
             get { return winMatchNumber; }
             set { winMatchNumber = value; }
         }
-        private int loseMatchNumber;
-
+ 
         public int LoseMatchNumber
         {
             get { return loseMatchNumber; }
             set { loseMatchNumber = value; }
         }
-        private int tieMatchNumber;
 
         public int TieMatchNumber
         {
             get { return tieMatchNumber; }
             set { tieMatchNumber = value; }
         }
-        private int pointClub;
-
+      
         public int PointClub
         {
             get { return pointClub; }
             set { pointClub = value; }
         }
-        private int goalClub;
 
         public int GoalClub
         {
@@ -101,11 +103,13 @@ namespace FootballManagament
 
         public override bool Equals(object obj)
         {
-            if (obj == null) return false;
+            if (obj == null)
+                return false;
             FootballClub objAspart = obj as FootballClub;
-            if (objAspart == null) return false;
-            else return Equals(objAspart);
-            
+            if (objAspart == null)
+                return false;
+            else
+                return Equals(objAspart);         
         }
 
         public int SortbyPoint(int point1, int point2)
@@ -120,6 +124,7 @@ namespace FootballManagament
             else
                 return this.PointClub.CompareTo(comparePart.PointClub);
         }
+
         public override int GetHashCode()
         {
             return PointClub;

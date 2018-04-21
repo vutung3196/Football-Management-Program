@@ -83,8 +83,9 @@ namespace FootballManagament
                 }
             }
         }
-         internal void DisplayMatch()
-         {
+
+        internal void DisplayMatch()
+        {
             Console.WriteLine("==========================================================");
             Console.WriteLine("|Name\t\t\t|Date\t\t|Time\t|Stadium\t|");
             Console.WriteLine("==========================================================");
@@ -92,11 +93,9 @@ namespace FootballManagament
             {
                 FootballMatch fm2 = MatchList[i];
                 Console.Write("|"+ fm2.NameMatch + "\t|" + fm2.DateMatch + "\t|" + fm2.HourMatch + "\t|" + fm2.StadiumMatch +"\t|");
-                Console.WriteLine(" ");
-                
+                Console.WriteLine(" ");               
             }
             Console.WriteLine("=================================================================");
-        }
-         
-        }
+        }         
     }
+}

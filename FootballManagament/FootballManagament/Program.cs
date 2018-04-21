@@ -71,7 +71,6 @@ namespace FootballManagament
                         }
                         while (choice2 >= 6);
                         break;
-
                     case 2:
                         Console.WriteLine("=============================");
                         Console.WriteLine("1. Display the schedule.");
@@ -102,7 +101,6 @@ namespace FootballManagament
                                     Console.WriteLine("4. Rank");
                                     Console.WriteLine("5. Exit.");
                                     break;
-
                             }
                         }
                         while (choice3 >= 4);
@@ -135,7 +133,8 @@ namespace FootballManagament
                                     fbc.UpdateResult();
                                     break;
                             }
-                        } while (choice4 >= 4);
+                        }
+                        while (choice4 >= 4);
                         break;
                     case 4:
                         Console.WriteLine("==========Football Rank==========");
@@ -144,14 +143,10 @@ namespace FootballManagament
                     case 5:
                         Console.WriteLine("Good luck");
                         Environment.Exit(0);
-                        break;
-                    
+                        break;                    
                 }
-                } while (choice != 6) ;
             }
-            }
+            while (choice != 6) ;
+        }
     }
-
-
-    
-
+}

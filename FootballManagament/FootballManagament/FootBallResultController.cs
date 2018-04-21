@@ -14,10 +14,12 @@ namespace FootballManagament
             get { return resultList; }
             set { resultList = value; }
         }
+
         internal FootBallResultController()
         {
             ResultList = new List<FootballResult>();
         }
+
         internal void DisplayResult()
         {
             Console.WriteLine("====Result====");
