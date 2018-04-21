@@ -98,7 +98,7 @@ namespace FootballManagament
             this.TieMatchNumber = TieMatchNumber;
         }
 
-        public int pointFootBall()
+        public int PointFootBall()
         {
             return 3 * WinMatchNumber + 1 * TieMatchNumber;
         }

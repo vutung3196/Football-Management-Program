@@ -112,7 +112,7 @@ namespace FootballManagament {
                 ClubList[i].TieMatchNumber = int.Parse(Console.ReadLine());
                 Console.WriteLine("Please enter the number of lost match: ");
                 ClubList[i].LoseMatchNumber = int.Parse(Console.ReadLine());
-                ClubList[i].PointClub = ClubList[i].pointFootBall();
+                ClubList[i].PointClub = ClubList[i].PointFootBall();
             }
             Console.WriteLine("==============================================");
             Console.WriteLine("|Club\t|Match\t|Won\t|Drawn\t|Lost\t|Points\t|");
